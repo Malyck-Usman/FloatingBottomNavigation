@@ -7,12 +7,12 @@ Update your `build.gradle` (project path) like below :
 
 ```groovy
 dependencyResolutionManagement {
-  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-  repositories {
-  mavenCentral()
-  maven { url 'https://jitpack.io' }
-               }
- }
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
 
 Update your `build.gradle` (module path) like below :
