@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     id("maven-publish")
+    id("kotlin-kapt")
     alias(libs.plugins.jetbrains.kotlin.android)
 }
 
@@ -44,4 +45,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("androidx.databinding:databinding-runtime:8.5.2")
 }
