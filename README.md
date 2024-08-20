@@ -1,17 +1,25 @@
 Floating Bottom Navigation 
 >  Add the JitPack repository to your build file
 dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-			mavenCentral()
-			maven { url 'https://jitpack.io' }
-		}
-	}
+
+> 	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+> 	repositories {
+
+   mavenCentral()
+
+   maven { url 'https://jitpack.io' }
+
+  }
+
+ }
 
 >  Add the dependency
 dependencies {
+
    implementation 'com.github.Malyck-Usman:FloatingBottomNavigation:1.0.0'
-	}
+
+ }
 
 > Add Floating Bottom Navigation in you layout xml file.
     <com.example.floatingnavigation.FloatingBottomNavigation
