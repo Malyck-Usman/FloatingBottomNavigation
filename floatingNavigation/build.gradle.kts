@@ -37,6 +37,23 @@ android {
     }
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from (components["release"])
+                groupId = "com.github.Malyck-Usman"
+                artifactId = "floatingNavigation"
+                version = "1.0.0"
+            }
+        }
+
+        repositories {
+            mavenLocal()
+        }
+    }
+}
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
